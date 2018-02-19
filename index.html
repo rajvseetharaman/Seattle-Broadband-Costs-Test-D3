@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Broadband providers in Seattle</title>
+
+    <!--bootstrap for styling-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>    
+    <div class="container"> <!-- content -->
+        <h1 style="color:purple;">Top Broadband Providers in Seattle</h1>
+        <p class="lead" style="color:orange;">By Rajendran Seetharaman and Nissim Panchpor</p>
+
+        <!-- more html content can go here; e.g., any data explanation -->
+
+        <div id="visContainer"> <!-- A container to hold the visualization -->
+          Enter the Internet speed range <br/>
+            <select id="price">
+            <option value="25_50">Speed 25-50 Mb/s</option>
+            <option value="50_75">Speed 50-75 Mb/s</option>
+            <option value="75_100">Speed 75-100 Mb/s</option>
+            <option value="100_or_above">Speed greater than 100 Mb/s</option><br/>
+            </select><br/><br/>
+          Do you want to see data for Upload or Download speeds?<br/>
+          <select id="updown1">
+            <option value="upload">Upload Speed</option>
+            <option value="download">Download Speed</option>
+            </select><br/><br/>
+             <input type="button" value="Submit" id="refresh">
+             <br><br>
+        </div>
+		
+        <!-- more html content can go here, e.g., further details -->
+
+        <p id="citation">Data from https://data.seattle.gov/City-Business/Broadband-Speed-Test/7rui-4ksb</p>
+    </div>
+
+    <!-- JavaScript modules -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="visualization.js"></script>
+</body>
+</html>
